@@ -5,8 +5,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 
 const styles = {
@@ -22,7 +20,7 @@ const styles = {
   }
 };
 
-function NavBar(props) {
+function ApplicationBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
@@ -49,8 +47,8 @@ function NavBar(props) {
   );
 }
 
-NavBar.propTypes = {
+ApplicationBar.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(NavBar);
+export default withStyles(styles)(ApplicationBar);

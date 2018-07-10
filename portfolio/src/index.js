@@ -1,21 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Experience from "./components/Experience/Experience";
-import Projects from "./components/Projects";
-import NavBar from "./components/NavBar";
+import HomePage from "./components/Home/HomePage";
+import AboutPage from "./components/About/AboutPage";
+import ExperiencePage from "./components/Experience/ExperiencePage";
+import ProjectsPage from "./components/Projects/ProjectsPage";
+import Navigation from "./components/Navigation/Navigation";
 import "./styles/css/index.css";
 
 ReactDOM.render(
   <Router>
     <div>
-      <Route path="/" component={NavBar} />
-      <Route exact path="/home" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/projects" component={Projects} />
-      <Route exact path="/experience" component={Experience} />
+      <Route path="/" component={Navigation} />
+      <Route exact path="/home" component={HomePage} />
+      <Route exact path="/about" component={AboutPage} />
+      <Route exact path="/projects" component={ProjectsPage} />
+      <Route exact path="/experience" component={ExperiencePage} />
     </div>
   </Router>,
   document.getElementById("root")

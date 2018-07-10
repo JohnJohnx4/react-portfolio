@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html,
 body,
 div,
@@ -136,11 +137,22 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+.home {
+  max-width: 900px;
+  margin: auto;
+}
+.experience {
+  max-width: 900px;
+  margin: auto;
+}
+.navbar {
+  margin-bottom: 100px;
+}
+.action__button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
 }
 body {
   margin: 0;
