@@ -29,7 +29,7 @@ function ApplicationBar(props) {
           <Typography variant="title" color="inherit" className={classes.flex}>
             John P. Correia
           </Typography>
-          <Link to="/home">
+          <Link to="/">
             <Button color="inherit">Home</Button>
           </Link>
           <Link to="/projects">

@@ -4,7 +4,9 @@ import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import DescriptionIcon from "@material-ui/icons/Description";
+import {
+	MenuIcon
+  } from "mdi-react";
 
 const styles = theme => ({
 	button: {
@@ -33,7 +35,7 @@ class SimpleMenu extends React.Component {
 					onClick={this.handleClick}
 					className={classes.button}
 				>
-					<DescriptionIcon />
+					<MenuIcon />
 				</Button>
 			</div>
 		);
@@ -58,9 +60,9 @@ class SimpleMenu extends React.Component {
 					open={Boolean(anchorEl)}
 					onClose={this.handleClose}
 				>
-					<MenuItem onClick={this.handleClose}>Resume</MenuItem>
-					<MenuItem onClick={this.handleClose}>Github</MenuItem>
-					<MenuItem onClick={this.handleClose}>LinkedIn</MenuItem>
+					<a href="https://drive.google.com/open?id=123LPHEGXkzLd9xj54Z7MU8xlQVlpoS4_"><MenuItem onClick={this.handleClose}>Resume</MenuItem></a>
+					<a href="https://github.com/JohnJohnx4"><MenuItem>Github</MenuItem></a>
+					<a href="https://www.linkedin.com/in/john-correia/"><MenuItem>LinkedIn</MenuItem></a>
 				</Menu>
 			</div>
 		);

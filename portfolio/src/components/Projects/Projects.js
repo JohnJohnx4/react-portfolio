@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import Avatar from "@material-ui/core/Avatar";
+import SimpleList from './List';
 
 const styles = theme => ({
   root: {
@@ -36,7 +35,7 @@ const styles = theme => ({
   }
 });
 
-function Home(props) {
+function Projects(props) {
   const { classes } = props;
 
   return (
@@ -44,24 +43,7 @@ function Home(props) {
       <Grid container spacing={24}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <div className={classes.row}>
-              <Avatar
-                alt="John C"
-                src="https://i.imgur.com/3GTFHtB.jpg"
-                className={classes.bigAvatar}
-              />
-            </div>
-            <Typography className={classes.heading}>
-              Hi! My name is John, and I am a web developer. I have over 8 years
-              of experience in the 3 major theme parks in Orlando, and I am an
-              expert at customer service. I also enjoy game development as a
-              hobby.
-            </Typography>
-            <Typography className={classes.secondaryHeading}>
-              Please explore my site to learn more or click on the icon on the
-              bottom-right to download my resume, access my GitHub Repos, and
-              visit my LinkedIn.
-            </Typography>
+            <SimpleList/>
           </Paper>
         </Grid>
       </Grid>
@@ -69,8 +51,8 @@ function Home(props) {
   );
 }
 
-Home.propTypes = {
+Projects.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Home);
+export default withStyles(styles)(Projects);
