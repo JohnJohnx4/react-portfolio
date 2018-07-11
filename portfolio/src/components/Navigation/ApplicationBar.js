@@ -24,22 +24,22 @@ function ApplicationBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="title" color="inherit" className={classes.flex}>
+      <AppBar position="static" className="appbar">
+        <Toolbar className="appbar__container">
+          <Typography variant="title" color="inherit" className={classes.flex + " appbar__title"}>
             John P. Correia
           </Typography>
           <Link to="/">
-            <Button color="inherit">Home</Button>
+            <Button className="appbar__button" color="inherit">Home</Button>
           </Link>
           <Link to="/projects">
-            <Button color="inherit">Projects</Button>
+            <Button className="appbar__button" color="inherit">Projects</Button>
           </Link>
           <Link to="/about">
-            <Button color="inherit">About</Button>
+            <Button className="appbar__button" color="inherit">About</Button>
           </Link>
           <Link to="/experience">
-            <Button color="inherit">Experience</Button>
+            <Button className="appbar__button" color="inherit">Experience</Button>
           </Link>
         </Toolbar>
       </AppBar>

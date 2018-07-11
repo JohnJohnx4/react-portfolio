@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html,
 body,
 div,
@@ -150,6 +151,17 @@ a:active {
 .navbar {
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 479px) {
+  .navbar .appbar .appbar__container .appbar__button {
+    font-size: 9px;
+    margin: 5px;
+    min-width: 25px;
+  }
+  .navbar button {
+    font-size: 10px;
+    padding: 0;
+  }
+}
 .action__button {
   position: fixed;
   right: 20px;
@@ -159,12 +171,6 @@ a:active {
 .projects {
   max-width: 900px;
   margin: auto;
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 body {
   margin: 0;

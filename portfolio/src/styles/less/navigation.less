@@ -1,10 +1,31 @@
+@smartphones: ~"only screen and (max-width: 479px)";
+
 .navbar {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
+
+	@media @smartphones {
+		.appbar {
+			.appbar__container {
+				.appbar__title {
+				}
+
+				.appbar__button {
+					font-size: 9px;
+					margin: 5px;
+					min-width: 25px;
+				}
+			}
+		}
+		button {
+			font-size: 10px;
+			padding: 0;
+		}
+	}
 }
 
 .action__button {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 100;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 100;
 }
