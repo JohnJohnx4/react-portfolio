@@ -8,7 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const styles = theme => ({
-  root1: {
+  root: {
     margin: "10px",
     padding: "10px 0"
   },
@@ -39,7 +39,7 @@ class Experience extends React.Component {
     const { expanded } = this.state;
 
     return (
-      <div className={classes.root1}>
+      <div className={classes.root}>
         <ExpansionPanel
           expanded={expanded === "panel1"}
           onChange={this.handleChange("panel1")}

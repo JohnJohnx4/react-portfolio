@@ -1,0 +1,26 @@
+{
+  "name": "react-portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "build": "cd portfolio && react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnJohnx4/react-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnJohnx4/react-portfolio/issues"
+  },
+  "homepage": "https://github.com/JohnJohnx4/react-portfolio#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
