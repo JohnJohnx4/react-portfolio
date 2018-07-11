@@ -9,10 +9,10 @@ import Navigation from "./components/Navigation/Navigation";
 import "./styles/css/index.css";
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
       <Route path="/" component={Navigation} />
-      <Route path="/" component={HomePage} />
+      <Route exact path="/" component={HomePage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/projects" component={ProjectsPage} />
       <Route exact path="/experience" component={ExperiencePage} />
