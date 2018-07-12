@@ -1,4 +1,8 @@
-@smartphones: ~"only screen and (max-width: 600px)";
+@smartphones: ~"(max-width: 479px)";
+@tablet: ~"(min-width: 480px)";
+@laptop: ~"(min-width: 900px)";
+@desktop: ~"(min-width: 1600px)";
+@monster: ~"(min-width: 2560x)";
 
 a:link,
 a:visited,
@@ -8,10 +12,130 @@ a:active {
   color: inherit;
 }
 
-.home {
+.homepage {
   max-width: 900px;
   margin: auto;
+  .home {
+    .home__grid__container {
+      width: 100%;
+      margin: inherit;
+      .home__grid {
+        padding: 0;
+        .home__paper {
+          .home__avatar {
+            width: 300px;
+            height: 300px;
+            img {
+              border-radius: 50%;
+              width: 300px;
+              height: 300px;
+            }
+          }
+          .home__header {
+          }
+          .home__subheader {
+          }
+        }
+      }
+    }
+  }
+
   @media @smartphones {
-    
+    max-width: 100%;
+    .home {
+      .home__grid__container {
+        width: 100%;
+        margin: inherit;
+        .home__grid {
+          padding: 0;
+          .home__paper {
+            .home__avatar {
+              width: 150px;
+              height: 150px;
+              img {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media @tablet {
+    max-width: 100%;
+    .home {
+      .home__grid__container {
+        width: 100%;
+        margin: inherit;
+        .home__grid {
+          padding: 0;
+          .home__paper {
+            .home__avatar {
+              width: 300px;
+              height: 300px;
+              img {
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media @desktop {
+    max-width: 65%;
+    .home {
+      .home__grid__container {
+        width: 100%;
+        margin: inherit;
+        .home__grid {
+          padding: 0;
+          .home__paper {
+            .home__avatar {
+              width: 450px;
+              height: 450px;
+              img {
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+              }
+            }
+            .home__header {
+              font-size: 2rem;
+            }
+            .home__subheader {
+  
+            }
+          }
+        }
+      }
+    }
+  }
+  @media @monster {
+    max-width: 60%;
+    .home {
+      .home__grid__container {
+        width: 100%;
+        margin: inherit;
+        .home__grid {
+          padding: 0;
+          .home__paper {
+            .home__avatar {
+              width: 650px;
+              height: 650px;
+              img {
+                border-radius: 50%;
+                width: 650px;
+                height: 650px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

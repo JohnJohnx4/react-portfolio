@@ -4,7 +4,7 @@ import Home from "./Home";
 class HomePage extends Component {
 	render() {
 		return (
-			<div className="home">
+			<div className="homepage">
 				<Home />
 			</div>
 		);
