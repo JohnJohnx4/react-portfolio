@@ -60,7 +60,7 @@ class SimpleMenu extends React.Component {
 					open={Boolean(anchorEl)}
 					onClose={this.handleClose}
 				>
-					<a href="https://drive.google.com/open?id=123LPHEGXkzLd9xj54Z7MU8xlQVlpoS4_"><MenuItem onClick={this.handleClose}>Resume</MenuItem></a>
+					<a href="https://drive.google.com/open?id=1IUfHy4HN5PmtBlC449WH-xjO-RXycxQ0"><MenuItem onClick={this.handleClose}>Resume</MenuItem></a>
 					<a href="https://github.com/JohnJohnx4"><MenuItem>Github</MenuItem></a>
 					<a href="https://www.linkedin.com/in/john-correia/"><MenuItem>LinkedIn</MenuItem></a>
 				</Menu>
