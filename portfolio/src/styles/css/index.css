@@ -137,7 +137,6 @@ a:active {
   color: inherit;
 }
 .homepage {
-  max-width: 900px;
   margin: auto;
 }
 .homepage .home .home__grid__container {
@@ -159,6 +158,9 @@ a:active {
 @media (max-width: 479px) {
   .homepage {
     max-width: 100%;
+  }
+  .homepage .home {
+    width: 100%;
   }
   .homepage .home .home__grid__container {
     width: 90%;
