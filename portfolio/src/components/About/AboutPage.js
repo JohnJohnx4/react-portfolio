@@ -44,7 +44,7 @@ class AbutPage extends React.Component {
     const { value } = this.state;
 
     return (
-      <Paper className={classes.root}>
+      <Paper className={classes.root + ' about__container'}>
         <Tabs
           value={this.state.value}
           onChange={this.handleChange}

@@ -2,7 +2,7 @@
 @tablet: ~"(min-width: 480px)";
 @laptop: ~"(min-width: 900px)";
 @desktop: ~"(min-width: 1600px)";
-@monster: ~"(min-width: 2560x)";
+@monster: ~"(min-width: 2560px)";
 
 a:link,
 a:visited,
@@ -32,6 +32,7 @@ a:active {
             }
           }
           .home__header {
+
           }
           .home__subheader {
           }
@@ -44,8 +45,8 @@ a:active {
     max-width: 100%;
     .home {
       .home__grid__container {
-        width: 100%;
-        margin: inherit;
+        width: 90%;
+        margin: auto;
         .home__grid {
           padding: 0;
           .home__paper {
@@ -58,6 +59,12 @@ a:active {
                 height: 150px;
               }
             }
+            .home__header {
+              font-size: 14px;
+            }
+            .home__subheader {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -67,8 +74,8 @@ a:active {
     max-width: 100%;
     .home {
       .home__grid__container {
-        width: 100%;
-        margin: inherit;
+        width: 80%;
+        margin: auto;
         .home__grid {
           padding: 0;
           .home__paper {
@@ -81,6 +88,38 @@ a:active {
                 height: 300px;
               }
             }
+            .home__header {
+            }
+            .home__subheader {
+            }
+          }
+        }
+      }
+    }
+  }
+  @media @laptop {
+    max-width: 70%;
+    .home {
+      .home__grid__container {
+        width: 100%;
+        margin: auto;
+        .home__grid {
+          padding: 0;
+          .home__paper {
+            .home__avatar {
+              width: 300px;
+              height: 300px;
+              img {
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+              }
+            }
+            .home__header {
+
+            }
+            .home__subheader {
+            }
           }
         }
       }
@@ -91,23 +130,24 @@ a:active {
     .home {
       .home__grid__container {
         width: 100%;
-        margin: inherit;
+        margin: auto;
         .home__grid {
           padding: 0;
           .home__paper {
             .home__avatar {
-              width: 450px;
-              height: 450px;
+              width: 400px;
+              height: 400px;
               img {
                 border-radius: 50%;
-                width: 450px;
-                height: 450px;
+                width: 400px;
+                height: 400px;
               }
             }
             .home__header {
-              font-size: 2rem;
+              font-size: 24px;
             }
             .home__subheader {
+            font-size: 22px;
   
             }
           }
@@ -124,14 +164,22 @@ a:active {
         .home__grid {
           padding: 0;
           .home__paper {
+            padding: 5%;
             .home__avatar {
-              width: 650px;
-              height: 650px;
+              width: 600px;
+              height: 600px;
               img {
                 border-radius: 50%;
-                width: 650px;
-                height: 650px;
+                width: 600px;
+                height: 600px;
               }
+            }
+            .home__header {
+              font-size: 44px;
+            }
+            .home__subheader {
+            font-size: 32px;
+  
             }
           }
         }

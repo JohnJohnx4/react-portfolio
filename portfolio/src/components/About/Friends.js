@@ -67,7 +67,7 @@ class Friends extends React.Component {
 
     return (
       <div>
-        <div className={classes.container}>
+        <div className={classes.container + ' friends__container'}>
           <Card className={classes.card}>
             <CardHeader
               avatar={
@@ -162,7 +162,7 @@ class Friends extends React.Component {
           </Card>
         </div>
 
-        <div className={classes.container}>
+        <div className={classes.container + ' friends__container'}>
           <Card className={classes.card}>
             <CardHeader
               avatar={

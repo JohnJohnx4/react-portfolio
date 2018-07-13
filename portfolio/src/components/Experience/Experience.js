@@ -39,22 +39,22 @@ class Experience extends React.Component {
     const { expanded } = this.state;
 
     return (
-      <div className={classes.root}>
+      <div className={classes.root + ' experience__container'}>
         <ExpansionPanel
           expanded={expanded === "panel1"}
           onChange={this.handleChange("panel1")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Lambda School</Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.heading + ' experience__header'}>Lambda School</Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Software Developer
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               December 2017 – July 2018
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Participated in a 6 month, full-time CS fundamental and Software
               Development program.<br />
               Approached a majority of coding projects using pair programming.<br />
@@ -77,18 +77,18 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel2")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               SeaWorld Orlando
             </Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Operations Host
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               June 2017 – May 2018
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Contributed in the reopening of the Kraken attraction with VR
               attachments.<br />
               Approached difficulties in opening a new attraction with
@@ -104,18 +104,18 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel3")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               Universal Studios Orlando
             </Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Volcano Bay Concierge
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               August – October 2017
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Welcomed Guests and explained all features of their stay.<br />
               Assessed all situations in order to provide adequate recovery and
               Guest satisfaction.
@@ -128,16 +128,16 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel4")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Spectrum</Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.heading + ' experience__header'}>Spectrum</Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Call Center
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               March – June 2017
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Provide technical support to customers calling in with technical
               issues.<br />
               Used critical thinking to solve customer issues, turning negative
@@ -151,18 +151,18 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel5")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               SeaWorld Orlando
             </Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Operations Host
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               October 2014 – March 2017
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               As a team, safely set a record number of dispatched coaster trains
               within one hour.<br />
               Provided outstanding Guest service while safely dispatching
@@ -178,16 +178,16 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel6")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>DisneyQuest</Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.heading + ' experience__header'}>DisneyQuest</Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Attractions Host
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               February 16 – June 2016
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Safely operated different attractions within the indoor theme
               park.<br />
               Verified functionality of all arcade games and cabinets.
@@ -200,18 +200,18 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel7")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               Universal Studios Orlando
             </Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Attractions Attendant
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               June – August 2015
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Provided immersive guest interactions in the Harry Potter
               universe.<br />
               Maintained the safety of every Guest.<br />
@@ -225,16 +225,16 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel8")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Fit2Run</Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.heading + ' experience__header'}>Fit2Run</Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Footwear Associate
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               November 2014 – February 2015
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Met the needs of walkers and runners of all levels with excellent
               product knowledge.<br />
               Met daily sales goals for different products through efficient
@@ -250,18 +250,18 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel9")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               Epcot – Walt Disney World
             </Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Main Entrance Coordinator
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               March 2012 - October 2014
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Led Cast Members through daily operation, supporting them with
               breaks and training.<br />
               Maintained communication throughout entire team to achieve common
@@ -281,18 +281,18 @@ class Experience extends React.Component {
           onChange={this.handleChange("panel10")}
         >
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               Epcot – Walt Disney World
             </Typography>
-            <Typography className={classes.secondaryHeading}>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Main Entrance Trainer
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>
+            <Typography className={classes.heading + ' experience__header'}>
               October 2010 – March 2012
             </Typography>
-            <Typography>
+            <Typography className={classes.secondaryHeading + ' experience__subheader'}>
               Worked alongside Cast Members and Leaders to provide unparalleled
               Guest Service.<br />
               Communicated new and upcoming procedures efficiently to Cast

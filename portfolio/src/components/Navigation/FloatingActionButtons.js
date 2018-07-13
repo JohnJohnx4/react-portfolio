@@ -33,9 +33,9 @@ class SimpleMenu extends React.Component {
           aria-owns={anchorEl ? "simple-menu" : null}
 					aria-haspopup="true"
 					onClick={this.handleClick}
-					className={classes.button}
+					className={classes.button + " nav__button"}
 				>
-					<MenuIcon />
+					<MenuIcon className="nav__menuicon"/>
 				</Button>
 			</div>
 		);

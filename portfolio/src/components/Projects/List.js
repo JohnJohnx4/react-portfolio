@@ -28,34 +28,35 @@ function SimpleList(props) {
   return (
     <div className={classes.root}>
       <List component="nav">
-        <a href="https://johnc-noter.herokuapp.com">
-          <ListItem button>
-            <ListItemIcon>
-              <NoteMultipleOutlineIcon />
-            </ListItemIcon>
-            <ListItemText primary="Noter" />
-            <Typography>A note taking app able to CRUD simple notes. Made with MERN, deployed to Heroku</Typography>
-          </ListItem>
-        </a>
 
         <ListItem
           button
           component="a"
-          href="https://obscure-island-58835.herokuapp.com"
+          href="https://www.hairspray.app"
         >
-          <ListItemIcon>
+          <ListItemIcon className="project__icon">
             <SprayIcon />
-          </ListItemIcon>
-          <ListItemText primary="Hairspray" />
-          <Typography>An app for hair salon guests to book appointments. Built with Mern and utilizes Twilio and Stripe APIs</Typography>
+          </ListItemIcon >
+          <ListItemText className="project__title" primary="Hairspray" />
+          <Typography className="project__text">An app for hair salon guests to book appointments. Built with Mern and utilizes Twilio and Stripe APIs</Typography>
         </ListItem>
 
+                <a href="https://johnc-noter.herokuapp.com">
+          <ListItem button>
+            <ListItemIcon className="project__icon">
+              <NoteMultipleOutlineIcon />
+            </ListItemIcon >
+            <ListItemText className="project__title" primary="Noter" />
+            <Typography className="project__text">A note taking app able to CRUD simple notes. Made with MERN, deployed to Heroku</Typography>
+          </ListItem>
+        </a>
+
         <ListItem button component="a" href="https://johnc-djorg.herokuapp.com">
-          <ListItemIcon>
+          <ListItemIcon className="project__icon">
             <BookmarkOutlineIcon />
-          </ListItemIcon>
-          <ListItemText primary="Djorg" />
-          <Typography>A bookmarking app built with Python and Django</Typography>
+          </ListItemIcon >
+          <ListItemText className="project__title" primary="Djorg" />
+          <Typography className="project__text">A bookmarking app built with Python and Django</Typography>
         </ListItem>
 
         <ListItem
@@ -63,11 +64,11 @@ function SimpleList(props) {
           component="a"
           href="https://shattered-iron.herokuapp.com"
         >
-          <ListItemIcon>
+          <ListItemIcon className="project__icon">
             <GamepadVariantIcon />
-          </ListItemIcon>
-          <ListItemText primary="Shattered Iron" />
-          <Typography>A 'Twisted Metal' game clone, built with Unity and deployed to Heroku in only 30 hours</Typography>
+          </ListItemIcon >
+          <ListItemText className="project__title" primary="Shattered Iron" />
+          <Typography className="project__text">A 'Twisted Metal' game clone, built with Unity and deployed to Heroku in only 30 hours</Typography>
         </ListItem>
 
         <ListItem
@@ -75,11 +76,11 @@ function SimpleList(props) {
           component="a"
           href="https://github.com/JohnJohnx4/Unity-Hackathon-Project"
         >
-          <ListItemIcon>
+          <ListItemIcon className="project__icon">
             <GunIcon />
-          </ListItemIcon>
-          <ListItemText primary="Zombie Killers" />
-          <Typography>A zombie FPS made in Unity in less than 30 hours. </Typography>
+          </ListItemIcon >
+          <ListItemText className="project__title" primary="Zombie Killers" />
+          <Typography className="project__text">A zombie FPS made in Unity in less than 30 hours. </Typography>
         </ListItem>
 
         <ListItem
@@ -87,11 +88,11 @@ function SimpleList(props) {
           component="a"
           href="https://johnjohnx4.github.io/Personal-Projects/Projects/Games/Tetris/"
         >
-          <ListItemIcon>
+          <ListItemIcon className="project__icon">
             <GamepadIcon />
-          </ListItemIcon>
-          <ListItemText primary="Tetris" />
-          <Typography>A tetris clone made with HTML Canvas and Javascript</Typography>
+          </ListItemIcon >
+          <ListItemText className="project__title" primary="Tetris" />
+          <Typography className="project__text">A tetris clone made with HTML Canvas and Javascript</Typography>
         </ListItem>
       </List>
     </div>

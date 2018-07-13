@@ -1,9 +1,14 @@
-@smartphones: ~"only screen and (max-width: 479px)";
+@smartphones: ~"(max-width: 479px)";
+@tablet: ~"(min-width: 480px)";
+@laptop: ~"(min-width: 900px)";
+@desktop: ~"(min-width: 1600px)";
+@monster: ~"(min-width: 2560px)";
 
 .navbar {
-	margin-bottom: 50px;
+	margin-bottom: 50px; 
 	
 	@media @smartphones {
+		margin-bottom: 25px; 
 		min-width: 100%;
 		max-width: 100%;
 		.appbar {
@@ -32,4 +37,30 @@
 	right: 20px;
 	bottom: 20px;
 	z-index: 100;
+	@media @desktop {
+		.nav__button {
+			width: 100px;
+			height: 100px;
+			.nav__menuicon {
+				width: 36px;
+				height: 36px;
+
+			}
+		}
+	}
+	@media @monster {
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		z-index: 100;
+		.nav__button {
+			width: 150px;
+			height: 150px;
+			.nav__menuicon {
+				width: 48px;
+				height: 48px;
+
+			}
+		}
+	}
 }
