@@ -9,6 +9,8 @@ import About from "./About";
 import Favorites from "./Favorites";
 import Hobbies from "./Hobbies";
 import Friends from "./Friends";
+// import Lambda from "./Lambda";
+
 
 function TabContainer(props) {
   return (
@@ -56,11 +58,13 @@ class AbutPage extends React.Component {
           <Tab value="two" label="Favorites" />
           <Tab value="three" label="Hobbies" />
           <Tab value="four" label="Friends" />
+          {/* <Tab value="five" label="Lambda School" /> */}
         </Tabs>
         {value === "one" && <TabContainer><About /></TabContainer>}
         {value === "two" && <TabContainer><Favorites /></TabContainer>}
         {value === "three" && <TabContainer><Hobbies /></TabContainer>}
         {value === "four" && <TabContainer><Friends /></TabContainer>}
+        {/* {value === "five" && <TabContainer><Lambda /></TabContainer>} */}
       </Paper>
     );
   }
