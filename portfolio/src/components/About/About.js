@@ -6,90 +6,109 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 const styles = theme => ({
-  root: {
-    flexGrow: 1
-  },
-  heading: {
-    margin: "20px",
-    fontSize: theme.typography.pxToRem(18),
-    fontWeight: "bold"
-  },
-  secondaryHeading: {
-    margin: "0 20px",
-    fontSize: theme.typography.pxToRem(14),
-    fontWeight: "500",
-    color: theme.palette.text.secondary
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: "left",
-    color: theme.palette.text.secondary,
-    height: "280px"
-  },
-  paperimg: {
-    padding: theme.spacing.unit * 2,
-    textAlign: "left",
-    color: theme.palette.text.secondary,
-    height: "280px",
-    display: "flex",
-    justifyContent: "space-around"
-  }
+	root: {
+		flexGrow: 1
+	},
+	heading: {
+		margin: "20px",
+		fontSize: theme.typography.pxToRem(18),
+		fontWeight: "bold"
+	},
+	secondaryHeading: {
+		margin: "0 20px",
+		fontSize: theme.typography.pxToRem(14),
+		fontWeight: "500",
+		color: theme.palette.text.secondary
+	},
+	paper: {
+		padding: theme.spacing.unit * 2,
+		textAlign: "left",
+		color: theme.palette.text.secondary,
+		height: "280px"
+	},
+	paperimg: {
+		padding: theme.spacing.unit * 2,
+		textAlign: "left",
+		color: theme.palette.text.secondary,
+		height: "280px",
+		display: "flex",
+		justifyContent: "space-around"
+	}
 });
 
 function About(props) {
-  const { classes } = props;
+	const { classes } = props;
 
-  return (
-    <div className={classes.root}>
-      <Grid container className="about__grid" spacing={24}>
-      <Grid item xs={4} className="about__img__grid">
-          <Paper className={classes.paperimg  + ' about__img__paper'}>
-            <img 
-            className="about__image"
-            src="https://i.imgur.com/i2wlcWk.jpg"
-            alt="John" />
-          </Paper>
-        </Grid>
-        <Grid item xs={8}>
-          <Paper className={classes.paper}>
-            <div className={classes.row} />
-            <Typography className={classes.heading}>
-              I've logged 8 years in theme parks and guest service, and now I'm ready to start new adventures in software development.
-            </Typography>
-            <Typography className={classes.secondaryHeading + ' about__text'}>
-              I have done so many different things at Walt Disney World, Universal Studios, and SeaWorld, from working 36 hour shifts to working way past midnight on New Years Eve, from performing first-aid to helping lost children; I've loved all of it, made many friends, some that I even consider family, and found love in a place I never expected. I've had a thrilling life so far, and I'm ready to start my next adventure pursuing a career in a field that will I love even more.
-            </Typography>
-          </Paper>
-        </Grid>
-      </Grid>
+	return (
+		<div className={classes.root}>
+			<Grid container className="about__grid" spacing={24}>
+				<Grid item xs={4} className="about__img__grid">
+					<Paper className={classes.paperimg + " about__img__paper"}>
+						<img
+							className="about__image"
+							src="https://i.imgur.com/i2wlcWk.jpg"
+							alt="John"
+						/>
+					</Paper>
+				</Grid>
+				<Grid item xs={8}>
+					<Paper className={classes.paper}>
+						<div className={classes.row} />
+						<Typography className={classes.heading}>
+							I've logged 8 years in theme parks and guest service, and now I'm
+							ready to start new adventures in software development.
+						</Typography>
+						<Typography className={classes.secondaryHeading + " about__text"}>
+							I have done so many different things at Walt Disney World,
+							Universal Studios, and SeaWorld, from working 36 hour shifts to
+							working way past midnight on New Years Eve, from performing
+							first-aid to helping lost children; I've loved all of it, made
+							many friends, some that I even consider family, and found love in
+							a place I never expected. I've had a thrilling life so far, and
+							I'm ready to start my next adventure pursuing a career in a field
+							that will I love even more.
+						</Typography>
+					</Paper>
+				</Grid>
+			</Grid>
 
-      <Grid container className="about__grid2" spacing={24}>
-        <Grid item xs={12} className="about__img__grid">
-          <Paper className={classes.paperimg  + ' about__img__paper'}>
-            <img 
-            className="about__image"
-            src="https://i.imgur.com/i2wlcWk.jpg"
-            alt="John" />
-          </Paper>
-        </Grid>
-        <Grid item xs={12} className="about__text__grid">
-          <Paper className={classes.paper + ' about__text'}>
-            <div className={classes.row} />
-            <Typography className={classes.heading}>
-              I've logged 8 years in theme parks and guest service, and now I'm ready to start new adventures in software development.
-            </Typography>
-            <Typography className={classes.secondaryHeading + ' about__text'}>
-              I have done so many different things at Walt Disney World, Universal Studios, and SeaWorld, from working 36 hour shifts to working way past midnight on New Years Eve, from performing first-aid to helping lost children; I've loved all of it, made many friends, some that I even consider family, and found love in a place I never expected. I've had a thrilling life so far, and I'm ready to start my next adventure pursuing a career in a field that I will love even more.
-            </Typography>
-          </Paper>
-        </Grid>
-      </Grid>
-    </div>
-  );
+			<Grid container className="about__grid2" spacing={24}>
+				<Grid item xs={12} className="about__img__grid">
+					<Paper className={classes.paperimg + " about__img__paper"}>
+						<img
+							className="about__image"
+							src="https://i.imgur.com/i2wlcWk.jpg"
+							alt="John"
+						/>
+					</Paper>
+				</Grid>
+				<Grid item xs={12} className="about__text__grid">
+					<Paper className={classes.paper + " about__text"}>
+						<div className={classes.row} />
+						<Typography className={classes.heading}>
+							I've logged 8 years in theme parks and guest service, and now I'm
+							ready to start new adventures in software development.
+						</Typography>
+
+						<Typography className={classes.secondaryHeading + " about__text"}>
+							I have done so many different things at Walt Disney World,
+							Universal Studios, and SeaWorld, from working 36 hour shifts to
+							working way past midnight on New Years Eve, from performing
+							first-aid to helping lost children; I've loved all of it, made
+							many friends, some that I even consider family, and found love in
+							a place I never expected. I've had a thrilling life so far, and
+							I'm ready to start my next adventure pursuing a career in a field
+							that I will love even more.
+						</Typography>
+					</Paper>
+				</Grid>
+			</Grid>
+		</div>
+	);
 }
 
 About.propTypes = {
-  classes: PropTypes.object.isRequired
+	classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(About);
