@@ -79,7 +79,7 @@ function About(props) {
               I've logged 8 years in theme parks and guest service, and now I'm ready to start new adventures in software development.
             </Typography>
             <Typography className={classes.secondaryHeading + ' about__text'}>
-              I have done so many different things at Walt Disney World, Universal Studios, and SeaWorld, from working 36 hour shifts to working way past midnight on New Years Eve, from performing first-aid to helping lost children; I've loved all of it, made many friends, some that I even consider family, and found love in a place I never expected. I've had a thrilling life so far, and I'm ready to start my next adventure pursuing a career in a field that will I love even more.
+              I have done so many different things at Walt Disney World, Universal Studios, and SeaWorld, from working 36 hour shifts to working way past midnight on New Years Eve, from performing first-aid to helping lost children; I've loved all of it, made many friends, some that I even consider family, and found love in a place I never expected. I've had a thrilling life so far, and I'm ready to start my next adventure pursuing a career in a field that I will love even more.
             </Typography>
           </Paper>
         </Grid>
