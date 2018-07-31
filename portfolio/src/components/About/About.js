@@ -66,7 +66,7 @@ function About(props) {
 							many friends, some that I even consider family, and found love in
 							a place I never expected. I've had a thrilling life so far, and
 							I'm ready to start my next adventure pursuing a career in a field
-							that will I love even more.
+							that I will love even more.
 						</Typography>
 					</Paper>
 				</Grid>
