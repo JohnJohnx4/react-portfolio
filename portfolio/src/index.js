@@ -6,6 +6,7 @@ import AboutPage from "./components/About/AboutPage";
 import ExperiencePage from "./components/Experience/ExperiencePage";
 import ProjectsPage from "./components/Projects/ProjectsPage";
 import Navigation from "./components/Navigation/Navigation";
+import CapstonePage from "./components/Capstone/CapstonePage";
 import "./styles/css/index.css";
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/projects" component={ProjectsPage} />
       <Route exact path="/experience" component={ExperiencePage} />
+      <Route exact path="/capstone" component={CapstonePage} />
     </div>
   </Router>,
   document.getElementById("root")

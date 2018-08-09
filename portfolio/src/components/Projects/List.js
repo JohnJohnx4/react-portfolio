@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import {
   NoteMultipleOutlineIcon,
   SprayIcon,
-  BookmarkOutlineIcon,
+  // BookmarkOutlineIcon,
   GamepadIcon,
   GamepadVariantIcon,
   GunIcon

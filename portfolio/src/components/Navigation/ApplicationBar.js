@@ -41,6 +41,9 @@ function ApplicationBar(props) {
           <Link to="/experience">
             <Button className="appbar__button" color="inherit">Experience</Button>
           </Link>
+          <Link to="/capstone">
+            <Button className="appbar__button" color="inherit">Capstone Signup</Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>
