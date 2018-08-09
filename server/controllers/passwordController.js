@@ -11,43 +11,40 @@ const bcrypt = require("bcrypt");
 const createPassword = (req, res) => {
 	const { use, password } = req.body;
 	const newPassword = new Password({ use, password });
-	newPassword.save((err, pw) => {
-		if (err) {
+	newPassword
+		.save()
+		.then(pass => {
+			res.status(200).json({
+				success: "Password saved",
+				pw
+			});
+		})
+		.catch(err => {
 			return res.status(400).send({ err });
-		}
-		res.status(200).json({
-			success: "Password was saved",
-			pw
 		});
-	});
 };
 
 const passwordLogin = (req, res) => {
-	const { email, password } = req.body;
-	User.findOne({ email }, (err, user) => {
-		if (err) {
-			res.status(500).json({ error: "Invalid Username/Password" });
-			return;
-		}
-		if (user === null) {
-			res.status(422).json({ error: "No user with that username in our DB" });
-			return;
-		}
-		const userID = user._id;
-		user.checkPassword(password, (nonMatch, hashMatch) => {
-			// This is an example of using our User.method from our model.
-			if (nonMatch !== null) {
-				res.status(422).json({ error: "passwords dont match" });
-				return;
-			}
-			if (hashMatch) {
-				const token = getTokenForUser({
-					username: user.email
-				});
-				res.json({ token, userID });
-			}
+	const { use, password } = req.body;
+	Password.findOne({ use })
+		.then(pass => {
+			console.log("in pass", pass);
+			pass.checkPassword(password, (nonMatch, hashMatch) => {
+				if (nonMatch !== null) {
+					res
+						.status(422)
+						.json({ error: "That is the wrong password for this Usage" });
+					return;
+				}
+				if (hashMatch) {
+					res.json({ success: "Capstone" });
+				}
+			});
+		})
+		.catch(err => {
+			console.log("error", err);
+			res.status(500).json({ error: err });
 		});
-	});
 };
 
 module.exports = {

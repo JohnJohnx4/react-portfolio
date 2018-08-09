@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");
 const path = require("path");
-const password = require('./controllers/passwordController');
+const password = require("./controllers/passwordController");
 // const routes = require('./routes/');
 // const keys = require('./config/keys');
 
@@ -42,14 +42,10 @@ app.get("/", (req, res) => {
 });
 
 app.route("/api/capstone/register/password").post(password.POST);
-
+app.route("/api/capstone/login").post(password.POST_LOGIN);
 
 // For Heroku Build
 // app.use(express.static(path.join(__dirname, '../client/build')));
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'));
 // });
-<<<<<<< HEAD
-
-=======
->>>>>>> ee29ea92c7a8ccf0edb542f4c291f13047fdf6be
