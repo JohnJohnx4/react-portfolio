@@ -49,4 +49,7 @@ app.route("/api/capstone/register/password").post(password.POST);
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'));
 // });
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee29ea92c7a8ccf0edb542f4c291f13047fdf6be
