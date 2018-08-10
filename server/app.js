@@ -39,8 +39,6 @@ app.use(cors());
 app.get("/", (req, res) => {
 	res.status(200).json("Hey, this is my server!");
 });
-app.route("/api/capstone/register/password").post(password.POST);
-app.route("/api/capstone/login").post(password.POST_LOGIN);
 
 // For Heroku Build
 // app.use(express.static(path.join(__dirname, '../client/build')));

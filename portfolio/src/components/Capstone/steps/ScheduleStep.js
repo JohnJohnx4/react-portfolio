@@ -4,7 +4,7 @@ class InfoStep extends Component {
   render() {
     return (
       <div className="">
-        Info Form here
+        Schedule session
       </div>
     );
   }

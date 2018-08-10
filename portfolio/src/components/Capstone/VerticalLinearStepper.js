@@ -8,6 +8,9 @@ import StepContent from "@material-ui/core/StepContent";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
+import InfoStep from "./steps/InfoStep";
+import ConfirmStep from "./steps/ConfirmStep";
+import ScheduleStep from "./steps/ScheduleStep";
 
 const styles = theme => ({
 	root: {
@@ -33,18 +36,13 @@ function getStepContent(step) {
 	switch (step) {
     case 0:
       // add in password handling
-			return `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`;
-    case 1:
+			return <InfoStep />;
+      case 1:
       // input data
-			return "An ad group contains one or more ads which target a shared set of keywords.";
-    case 2:
-    //  get date/time
-			return `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`;
+			return <ScheduleStep />;
+      case 2:
+      //  get date/time
+			return <ConfirmStep />;
 		default:
 			return "Unknown step";
 	}
@@ -96,7 +94,6 @@ class VerticalLinearStepper extends React.Component {
 											>
 												Back
 											</Button>
-
 											<Button
 												variant="contained"
 												color="primary"
@@ -114,7 +111,7 @@ class VerticalLinearStepper extends React.Component {
 				</Stepper>
 				{activeStep === steps.length && (
 					<Paper square elevation={0} className={classes.resetContainer}>
-						<Typography>All steps completed - you&quot;re finished</Typography>
+						<Typography>All steps completed, see you soon!</Typography>
 						<Button onClick={this.handleReset} className={classes.button}>
 							Reset
 						</Button>
