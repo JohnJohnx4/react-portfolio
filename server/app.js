@@ -2,7 +2,7 @@ require("dotenv").load();
 const express = require("express");
 const mongoose = require("mongoose");
 // const helmet = require('helmet');
-const morgan = require("morgan");
+// const morgan = require("morgan");
 const cors = require("cors");
 const path = require("path");
 const password = require("./controllers/passwordController");
@@ -31,7 +31,7 @@ app.listen(port, err => {
 
 // Middleware
 // app.use(helmet());
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors());
 
