@@ -15,7 +15,7 @@ const app = express();
 // Connecting to mLab/port
 mongoose
 	.connect(
-		process.env.DATA_BASE || "mongodb://localhost:27017/portfolio",
+		process.env.MONGODB_URI || "mongodb://localhost:27017/portfolio",
 		{ useNewUrlParser: true }
 	)
 	.then(() => {
