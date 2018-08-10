@@ -30,8 +30,10 @@ const passwordLogin = (req, res) => {
 	Password.findOne({ use })
 		.then(pass => {
 			console.log("in pass", pass);
-			pass.checkPassword(password, (nonMatch, hashMatch) => {
-				if (nonMatch !== null) {
+			pass.checkPassword(password, (err, hashMatch) => {
+				console.log("nonMatch",err);
+				console.log("hashMatch",hashMatch);
+				if (err !== null) {
 					res
 						.status(422)
 						.json({ error: "That is the wrong password for this Usage" });
@@ -40,6 +42,10 @@ const passwordLogin = (req, res) => {
 				if (hashMatch) {
 					res.json({ success: "Capstone" });
 				}
+				else if (!hashMatch) {
+					res.json({ faliure: "Wrong password" });
+				}
+
 			});
 		})
 		.catch(err => {
