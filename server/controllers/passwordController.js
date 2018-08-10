@@ -16,10 +16,11 @@ const createPassword = (req, res) => {
 		.then(pass => {
 			res.status(200).json({
 				success: "Password saved",
-				pw
+				pass
 			});
 		})
 		.catch(err => {
+			console.log(err)
 			return res.status(400).send({ err });
 		});
 };
