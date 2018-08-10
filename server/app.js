@@ -8,7 +8,6 @@ const path = require("path");
 const password = require("./controllers/passwordController");
 // const routes = require('./routes/');
 // const keys = require('./config/keys');
-
 const port = process.env.PORT || 5000;
 const app = express();
 
@@ -40,7 +39,6 @@ app.use(cors());
 app.get("/", (req, res) => {
 	res.status(200).json("Hey, this is my server!");
 });
-
 app.route("/api/capstone/register/password").post(password.POST);
 app.route("/api/capstone/login").post(password.POST_LOGIN);
 

@@ -3,11 +3,6 @@ const bodyParser = require("body-parser");
 const Password = require("../models/Password.js");
 const bcrypt = require("bcrypt");
 
-// if Password.findOne({use: ""})
-// Password.create({
-//   password: "automatichash"
-// });
-
 const createPassword = (req, res) => {
 	const { use, password } = req.body;
 	const newPassword = new Password({ use, password });
@@ -29,10 +24,7 @@ const passwordLogin = (req, res) => {
 	const { use, password } = req.body;
 	Password.findOne({ use })
 		.then(pass => {
-			console.log("in pass", pass);
 			pass.checkPassword(password, (err, hashMatch) => {
-				console.log("nonMatch",err);
-				console.log("hashMatch",hashMatch);
 				if (err !== null) {
 					res
 						.status(422)
@@ -49,7 +41,6 @@ const passwordLogin = (req, res) => {
 			});
 		})
 		.catch(err => {
-			console.log("error", err);
 			res.status(500).json({ error: err });
 		});
 };
