@@ -13,7 +13,7 @@
 ### ~~Display GIFs of projects [games, webapps, PM projects]~~
 ### ~~honestly I would have those gifs of your game as close to front and center as possible. Maybe on the home page a short about section~~
 ### ~~“My name is John and I’m a software engineer hobbyist turning professional. I love building games (C#, Unity), but can build about anything (JS, React, Python, C, Node, Express, etc.)”~~
-### ~~Remove button in nav and move everything to Contact section ~~
+### ~~Remove button in nav and move everything to Contact section~~
 
 # About Me
 ### Change descriptions to talk more about being a developer than being in customer service

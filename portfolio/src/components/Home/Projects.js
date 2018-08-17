@@ -47,19 +47,19 @@ const projects = [
 		label: "Shattered Iron",
 		description: "A vehicle combat shooter inspired by Twisted Metal, also for a 24 hour Hack-a-thon. Key features include projectile collisions, raycasts, enemy point based navigation AI, and physics based vehicle movement.",
 		vidSrc: "https://giant.gfycat.com/ScrawnyGrandioseHeterodontosaurus.mp4",
-		poster: "https://thumbs.gfycat.com/SaneDisguisedChital-size_restricted.gif"
+		poster: "https://thumbs.gfycat.com/ScrawnyGrandioseHeterodontosaurus-size_restricted.gif"
 	},
   {
 		label: "Hairspray",
     description: "A MERN stack application to make hair salon appointments, pay in advance via Stripe API, recieve reminders via Twilio API, and submit feedback",
     vidSrc: "https://giant.gfycat.com/HeftyScalyInvisiblerail.mp4",
-    poster: "https://thumbs.gfycat.com/ScrawnyGrandioseHeterodontosaurus-size_restricted.gif"
+		poster: "https://thumbs.gfycat.com/HeftyScalyInvisiblerail-size_restricted.gif"
   },
 	{
 		label: "Zombie Killers",
 		description: "An FPS made in Unity for a 24 hour Hack-a-thon. Some features included physics based movement, item pickups, data scructured inventory, and enemy AI.",
 		vidSrc: "https://giant.gfycat.com/SaneDisguisedChital.mp4",
-		poster: "https://thumbs.gfycat.com/HeftyScalyInvisiblerail-size_restricted.gif"
+		poster: "https://thumbs.gfycat.com/SaneDisguisedChital-size_restricted.gif"
 	},
 	{
 		label: "GiveMeMyMoney",
@@ -71,13 +71,13 @@ const projects = [
     label: "Tetris Clone",
     description: "A Tetris clone made in pure CSS, HTML, JavaScript, and HTML Canvas.",
     vidSrc: "https://giant.gfycat.com/FeistyDescriptiveEyas.mp4",
-    poster: "https://thumbs.gfycat.com/JubilantImpressiveDanishswedishfarmdog-size_restricted.gif"
+		poster: "https://https://thumbs.gfycat.com/FeistyDescriptiveEyas-size_restricted.gif"
   },
 	{
 		label: "LambdaHairSchool",
 		description: "A React/Django app, with my role being Project Manager. I led a team of 4 developers, supervised GitHub pull requests, provided support when needed, and solved problems when hitting walls.",
 		vidSrc: "https://giant.gfycat.com/JubilantImpressiveDanishswedishfarmdog.mp4",
-		poster: "https://https://thumbs.gfycat.com/FeistyDescriptiveEyas-size_restricted.gif"
+		poster: "https://thumbs.gfycat.com/JubilantImpressiveDanishswedishfarmdog-size_restricted.gif"
 	},
 ];
 
