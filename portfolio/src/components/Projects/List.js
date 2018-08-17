@@ -64,7 +64,7 @@ function SimpleList(props) {
 					<ListItemText className="project__title" primary="Shattered Iron" />
 					<Typography className="project__text">
 						A 'Twisted Metal' game clone, built with Unity and deployed to
-						Heroku in under only 30 hours
+						Heroku.
 					</Typography>
 				</ListItem>
 
@@ -78,7 +78,7 @@ function SimpleList(props) {
 					</ListItemIcon>
 					<ListItemText className="project__title" primary="Zombie Killers" />
 					<Typography className="project__text">
-						A zombie first-person shooter made in Unity in less than 30 hours.
+						A zombie first-person shooter made in Unity.
 					</Typography>
 				</ListItem>
 
