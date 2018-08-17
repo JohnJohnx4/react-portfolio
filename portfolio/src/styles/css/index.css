@@ -156,9 +156,6 @@ a:active {
   width: 100px;
   height: 100px;
 }
-.homepage .home .home__grid__container .home__grid .home__paper__sub {
-  margin-top: 25px;
-}
 @media (max-width: 479px) {
   .homepage {
     max-width: 100%;

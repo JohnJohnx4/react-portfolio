@@ -12,20 +12,27 @@ const styles = theme => ({
 		flexGrow: 1
 	},
 	heading: {
-		margin: "20px",
+		margin: "40px 20px 20px 20px",
 		fontSize: theme.typography.pxToRem(18),
-		fontWeight: "bold"
+		fontWeight: "bold",
+		textAlign: "left"
 	},
 	secondaryHeading: {
 		margin: "0 20px",
 		fontSize: theme.typography.pxToRem(14),
 		color: theme.palette.text.secondary
 	},
-	paper: {
-		padding: theme.spacing.unit * 2,
-		textAlign: "center",
-		color: theme.palette.text.secondary
-	},
+  paper: {
+    padding: theme.spacing.unit * 2,
+    textAlign: "center",
+    color: theme.palette.text.secondary
+  },
+  paper2: {
+    padding: theme.spacing.unit * 2,
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+    marginTop: "25px"
+  },
 	row: {
 		display: "flex",
 		justifyContent: "center"
@@ -44,7 +51,7 @@ function Home(props) {
 		<div className={classes.root + " home"}>
 			<Grid container spacing={24} className="home__grid__container">
 				<Grid item xs={12} className="home__grid">
-        
+
 					<Paper className={classes.paper + " home__paper"}>
 						<div className={classes.row}>
 							<Avatar
@@ -52,19 +59,20 @@ function Home(props) {
 								src="https://i.imgur.com/3GTFHtB.jpg"
 								className={classes.bigAvatar + " home__avatar"}
 							/>
+							<Typography className={classes.heading + " home__header"}>
+								<AboutText />
+							</Typography>
 						</div>
-						<Typography className={classes.heading + " home__header"}>
-							<AboutText />
-						</Typography>
 					</Paper>
 
-					<Paper className={classes.paper + " home__paper__sub"}>
+					<Paper className={classes.paper2 + " home__paper"}>
 						<Typography
 							className={classes.secondaryHeading + " home__subheader"}
 						>
 							<AboutSubText />
 						</Typography>
 					</Paper>
+
 				</Grid>
 			</Grid>
 		</div>
