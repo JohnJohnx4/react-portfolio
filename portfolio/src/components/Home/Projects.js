@@ -138,7 +138,7 @@ class Projects extends React.Component {
 				>
 					{projects.map(step => (
 						<video
-							autoplay
+							autoPlay="autoplay"
 							loop
 							playsinline
 							muted
