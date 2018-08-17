@@ -65,7 +65,7 @@ const projects = [
   },
 	{
 		label: "LambdaHairSchool",
-		description: "A React/Django app, with my role being Project Manager. I led a team of 4 developers, supervised GitHub pull requests, provided support when needed, and sovled problems when hitting walls.",
+		description: "A React/Django app, with my role being Project Manager. I led a team of 4 developers, supervised GitHub pull requests, provided support when needed, and solved problems when hitting walls.",
 		vidSrc:
 			"https://giant.gfycat.com/JubilantImpressiveDanishswedishfarmdog.mp4"
 	},
@@ -138,7 +138,7 @@ class Projects extends React.Component {
 				>
 					{projects.map(step => (
 						<video
-							autoPlay="autoplay"
+							autoplay
 							loop
 							key={step.label}
 							className={classes.video + " home__carousel"}
