@@ -46,7 +46,7 @@ function About(props) {
 					<Paper className={classes.paperimg + " about__img__paper"}>
 						<img
 							className="about__image"
-							src="https://i.imgur.com/i2wlcWk.jpg"
+							src="https://i.imgur.com/3GTFHtB.jpg"
 							alt="John"
 						/>
 					</Paper>

@@ -1,0 +1,14 @@
+@smartphones: ~"(max-width: 479px)";
+@tablet: ~"(min-width: 480px)";
+@laptop: ~"(min-width: 900px)";
+@desktop: ~"(min-width: 1600px)";
+@monster: ~"(min-width: 2560px)";
+
+.contact {
+    max-width: 900px;
+    margin: auto;
+    @media @smartphones {
+      max-width: 90%;
+      min-width: 110px;
+    }
+  }

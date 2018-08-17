@@ -145,6 +145,7 @@ class Projects extends React.Component {
 							key={step.label}
 							className={classes.video + " home__carousel"}
 						>
+							<source src={step.vidSrc}/>
 							<source src={step.vidSrc} type="video/mp4" />
 						</video>
 					))}

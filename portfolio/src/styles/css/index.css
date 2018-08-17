@@ -433,6 +433,16 @@ a:active {
     font-size: 10px;
   }
 }
+.contact {
+  max-width: 900px;
+  margin: auto;
+}
+@media (max-width: 479px) {
+  .contact {
+    max-width: 90%;
+    min-width: 110px;
+  }
+}
 body {
   margin: 0;
   padding: 0;

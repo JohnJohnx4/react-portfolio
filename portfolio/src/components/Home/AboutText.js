@@ -8,7 +8,7 @@ export function AboutSubText() {
 	// return newSubText;
 }
 
-const newText = "Hello! My name is John and I am a software engineer hobbyist going professional. I love building games with C# and Unity, but I can build just about anything(JS, React, Node, Express, Python, Django, and more)!";
+const newText = "Hello! My name is John and I am a software engineer hobbyist going professional. I love building games with C# and Unity, but I can build just about anything (JS, React, Node, Express, Python, Django, and more)!";
 
 // const newSubText = ""
 
