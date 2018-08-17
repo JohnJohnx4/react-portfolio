@@ -6,33 +6,34 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import { AboutText, AboutSubText } from "./AboutText";
+import Projects from './Projects';
 
 const styles = theme => ({
 	root: {
 		flexGrow: 1
 	},
 	heading: {
-		margin: "40px 20px 20px 20px",
+		margin: "20px",
 		fontSize: theme.typography.pxToRem(18),
 		fontWeight: "bold",
-		textAlign: "left"
+		textAlign: "center"
 	},
 	secondaryHeading: {
 		margin: "0 20px",
 		fontSize: theme.typography.pxToRem(14),
 		color: theme.palette.text.secondary
 	},
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: "center",
-    color: theme.palette.text.secondary
-  },
-  paper2: {
-    padding: theme.spacing.unit * 2,
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    marginTop: "25px"
-  },
+	paper: {
+		padding: theme.spacing.unit * 2,
+		textAlign: "center",
+		color: theme.palette.text.secondary
+	},
+	paper2: {
+		padding: theme.spacing.unit * 2,
+		textAlign: "center",
+		color: theme.palette.text.secondary,
+		marginTop: "25px"
+	},
 	row: {
 		display: "flex",
 		justifyContent: "center"
@@ -51,28 +52,26 @@ function Home(props) {
 		<div className={classes.root + " home"}>
 			<Grid container spacing={24} className="home__grid__container">
 				<Grid item xs={12} className="home__grid">
-
-					<Paper className={classes.paper + " home__paper"}>
-						<div className={classes.row}>
-							<Avatar
-								alt="John C"
-								src="https://i.imgur.com/3GTFHtB.jpg"
-								className={classes.bigAvatar + " home__avatar"}
-							/>
-							<Typography className={classes.heading + " home__header"}>
-								<AboutText />
-							</Typography>
-						</div>
-					</Paper>
-
-					<Paper className={classes.paper2 + " home__paper"}>
+					<Grid item xs={12} className="home__grid">
+						<Paper className={classes.paper + " home__paper"}>
+							<div className={classes.row}>
+								{/* <Avatar
+									alt="John C"
+									src="https://i.imgur.com/3GTFHtB.jpg"
+									className={classes.bigAvatar + " home__avatar"}
+								/> */}
+								<Typography className={classes.heading + " home__header"}>
+									<AboutText />
+								</Typography>
+							</div>
+              <Projects />
 						<Typography
 							className={classes.secondaryHeading + " home__subheader"}
 						>
 							<AboutSubText />
 						</Typography>
-					</Paper>
-
+						</Paper>
+					</Grid>
 				</Grid>
 			</Grid>
 		</div>
