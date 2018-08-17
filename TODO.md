@@ -1,7 +1,7 @@
 # Overall
-- [ ] Create Carosel/slideshow on frontpage
-- [ ] Add projects and all gifs to it, plus descriptions and github repos
-- [ ] Add shortened About section
+- [x] Create Carosel/slideshow on frontpage
+- [x] Add projects and all gifs to it, plus descriptions and github repos
+- [x] Add shortened About section
 - [ ] Nix Projects page
 - [ ] Update About me text
 - [x] Make John P. Correia on Navbar a clickable button
@@ -10,12 +10,10 @@
 
 # Home
 ### ~~Set "John P Correia on the top left of navbar to lead back to Home~~
-### Display GIFs of projects [games, webapps, PM projects]
+### ~~Display GIFs of projects [games, webapps, PM projects]~~
 honestly I would have those gifs of your game as close to front and center as possible. Maybe on the home page
 a short about section
-### “My name is John and I’m a software engineer hobbyist turning professional. 
-        I love building games (C#, Unity), 
-        but can build about anything (JS, React, Python, C, Node, Express, etc.)”
+### ~~“My name is John and I’m a software engineer hobbyist turning professional. I love building games (C#, Unity), but can build about anything (JS, React, Python, C, Node, Express, etc.)”~~
 ### Remove button in nav and move everything to Contact section       
  ``` 
 Maybe say something like 
