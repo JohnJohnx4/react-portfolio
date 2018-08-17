@@ -44,7 +44,7 @@ function ApplicationBar(props) {
             <Button className="appbar__button" color="inherit">Experience</Button>
           </Link>
           <Link to="/contact">
-            <Button className="appbar__button" color="inherit">Contact Me</Button>
+            <Button className="appbar__button" color="inherit">Contact</Button>
           </Link>
         </Toolbar>
       </AppBar>

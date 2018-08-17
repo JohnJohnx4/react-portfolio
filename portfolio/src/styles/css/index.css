@@ -442,6 +442,16 @@ a:active {
     max-width: 90%;
     min-width: 110px;
   }
+  .contact .contact__icon {
+    margin: 0;
+  }
+  .contact .contact__title span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .contact .contact__text {
+    font-size: 10px;
+  }
 }
 body {
   margin: 0;
