@@ -61,7 +61,7 @@ function About(props) {
 						<Typography className={classes.secondaryHeading + " about__text"}>
 							I love building games and tinkering with them as a hobby, and have
 							always found coding fun. I have recently shifted my focus towards
-							full stack web developement, and have fallen in love with this
+							full stack web development, and have fallen in love with this
 							field as well. I have recently graduated from Lambda school, and I
 							am excited to find a career in software development where I can
 							both utilize the skills I've acquired coding games and web apps,
@@ -93,7 +93,7 @@ function About(props) {
 						<Typography className={classes.secondaryHeading + " about__text"}>
 							I love building games and tinkering with them as a hobby, and have
 							always found coding fun. I have recently shifted my focus towards
-							full stack web developement, and have fallen in love with this
+							full stack web development, and have fallen in love with this
 							field as well. I have recently graduated from Lambda school, and I
 							am excited to find a career in software development where I can
 							both utilize the skills I've acquired coding games and web apps,
