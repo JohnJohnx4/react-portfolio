@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ApplicationBar from './ApplicationBar';
-import FloatingActionButtons from './FloatingActionButtons';
 
 
 class Navigation extends Component {
@@ -8,7 +7,6 @@ class Navigation extends Component {
     return (
       <div className="navbar">
       <ApplicationBar />
-      <FloatingActionButtons />
       </div>
     );
   }

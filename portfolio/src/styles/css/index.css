@@ -376,38 +376,6 @@ a:active {
     padding: 0;
   }
 }
-.action__button {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 100;
-}
-@media (min-width: 1600px) {
-  .action__button .nav__button {
-    width: 100px;
-    height: 100px;
-  }
-  .action__button .nav__button .nav__menuicon {
-    width: 36px;
-    height: 36px;
-  }
-}
-@media (min-width: 2560px) {
-  .action__button {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 100;
-  }
-  .action__button .nav__button {
-    width: 150px;
-    height: 150px;
-  }
-  .action__button .nav__button .nav__menuicon {
-    width: 48px;
-    height: 48px;
-  }
-}
 .projects {
   max-width: 900px;
   margin: auto;

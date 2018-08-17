@@ -4,7 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Avatar from "@material-ui/core/Avatar";
 import { AboutText, AboutSubText } from "./AboutText";
 import Projects from './Projects';
 
@@ -55,11 +54,6 @@ function Home(props) {
 					<Grid item xs={12} className="home__grid">
 						<Paper className={classes.paper + " home__paper"}>
 							<div className={classes.row}>
-								{/* <Avatar
-									alt="John C"
-									src="https://i.imgur.com/3GTFHtB.jpg"
-									className={classes.bigAvatar + " home__avatar"}
-								/> */}
 								<Typography className={classes.heading + " home__header"}>
 									<AboutText />
 								</Typography>
