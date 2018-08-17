@@ -140,6 +140,8 @@ class Projects extends React.Component {
 						<video
 							autoplay
 							loop
+							playsinline
+							muted
 							key={step.label}
 							className={classes.video + " home__carousel"}
 						>
