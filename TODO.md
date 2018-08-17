@@ -1,11 +1,22 @@
+# Overall
+- [ ] Create Carosel/slideshow on frontpage
+- [ ] Add projects and all gifs to it, plus descriptions and github repos
+- [ ] Add shortened About section
+- [ ] Nix Projects page
+- [ ] Update About me text
+- [ ] Make John P. Correia on Navbar a clickable button
+
+
+
 # Home
-- [ ] Set "John P Correia on the top left of navbar to lead back to Home
-- [ ] Display GIFs of projects [games, webapps, PM projects]
+### Set "John P Correia on the top left of navbar to lead back to Home
+### Display GIFs of projects [games, webapps, PM projects]
 honestly I would have those gifs of your game as close to front and center as possible. Maybe on the home page
 a short about section
-- [ ] “My name is John and I’m a software engineer hobbyist turning professional. 
+### “My name is John and I’m a software engineer hobbyist turning professional. 
         I love building games (C#, Unity), 
         but can build about anything (JS, React, Python, C, Node, Express, etc.)”
+### Remove button in nav and move everything to Contact section       
  ``` 
 Maybe say something like 
 “I love building games, and 
@@ -16,7 +27,7 @@ I would get on a call with you so fast
 ```
 
 # About Me
-- [ ] Change descriptions to talk more about being a developer than being in customer service
+### Change descriptions to talk more about being a developer than being in customer service
 ```
 I would work on your “about” quite a bit. 
 It’s not punchy enough and 
@@ -28,10 +39,10 @@ You want something that really says
 ```
 
 # Projects
-- [ ] Think about a different card/container for games to show off website as gifs
-- [ ] Should say "Q and W to rotate"
-- [ ] Display GIFs of projects [games, webapps, PM projects]
-- [ ] Add more gifs of my projects
+### Think about a different card/container for games to show off website as gifs
+### Should say "Q and W to rotate"
+### Display GIFs of projects [games, webapps, PM projects]
+### Add more gifs of my projects
 ```
 On the cards for your projects, 
 this is a nice-to-have, 
@@ -44,3 +55,4 @@ Create one of those for all of your games and put it in the projects section!!!!
 
 small thing - on your tetris game “z” to rotate doesn’t work
 ```
+
