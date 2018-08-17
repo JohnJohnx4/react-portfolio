@@ -38,19 +38,19 @@ import SwipeableViews from "react-swipeable-views";
 
 const projects = [
 	{
-		label: "Zombie Killers",
-		description: "An FPS made in Unity for a 24 hour Hack-a-thon. Some features included physics based movement, item pickups, data scructured inventory, and enemy AI.",
-		vidSrc: "https://giant.gfycat.com/SaneDisguisedChital.mp4"
+		label: "Shattered Iron",
+		description: "A vehicle combat shooter inspired by Twisted Metal, also for a 24 hour Hack-a-thon. Key features include projectile collisions, raycasts, enemy point based navigation AI, and physics based vehicle movement.",
+		vidSrc: "https://giant.gfycat.com/ScrawnyGrandioseHeterodontosaurus.mp4"
 	},
   {
-    label: "Hairspray",
+		label: "Hairspray",
     description: "A MERN stack application to make hair salon appointments, pay in advance via Stripe API, recieve reminders via Twilio API, and submit feedback",
     vidSrc: "https://giant.gfycat.com/HeftyScalyInvisiblerail.mp4"
   },
 	{
-		label: "Shattered Iron",
-		description: "A vehicle combat shooter inspired by Twisted Metal, also for a 24 hour Hack-a-thon. Key features include projectile collisions, raycasts, enemy point based navigation AI, and physics based vehicle movement.",
-		vidSrc: "https://giant.gfycat.com/ScrawnyGrandioseHeterodontosaurus.mp4"
+		label: "Zombie Killers",
+		description: "An FPS made in Unity for a 24 hour Hack-a-thon. Some features included physics based movement, item pickups, data scructured inventory, and enemy AI.",
+		vidSrc: "https://giant.gfycat.com/SaneDisguisedChital.mp4"
 	},
 	{
 		label: "GiveMeMyMoney",

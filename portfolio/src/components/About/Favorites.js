@@ -72,7 +72,7 @@ class Favorites extends React.Component {
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography className={classes.heading}>No Specific Order +</Typography>
+            <Typography className={classes.heading}>No Specific Order</Typography>
             <Typography>
               1. Boku no Hero Academia<br />
               2. Full Metal Alchemist: Brotherhood<br />
@@ -126,7 +126,7 @@ class Favorites extends React.Component {
               1. Forbidden Journey<br />
               2. Kraken<br />
               3. Flight of Passage<br />
-              4. Revenge of the Mummy
+              4. Revenge of the Mummy<br />
               5. Manta
             </Typography>
           </ExpansionPanelDetails>

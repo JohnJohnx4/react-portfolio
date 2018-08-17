@@ -55,18 +55,18 @@ function About(props) {
 					<Paper className={classes.paper}>
 						<div className={classes.row} />
 						<Typography className={classes.heading}>
-							I've logged 8 years in theme parks and guest service, and now I'm
-							ready to start new adventures in software development.
+							I've been coding as a hobby for years, but now I am developing
+							apps and websites for a living.
 						</Typography>
 						<Typography className={classes.secondaryHeading + " about__text"}>
-							I have done so many different things at Walt Disney World,
-							Universal Studios, and SeaWorld, from working 36 hour shifts to
-							working way past midnight on New Years Eve, from performing
-							first-aid to helping lost children; I've loved all of it, made
-							many friends, some that I even consider family, and found love in
-							a place I never expected. I've had a thrilling life so far, and
-							I'm ready to start my next adventure pursuing a career in a field
-							that I will love even more.
+							I love building games and tinkering with them as a hobby, and have
+							always found coding fun. I have recently shifted my focus towards
+							full stack web developement, and have fallen in love with this
+							field as well. I have recently graduated from Lambda school, and I
+							am excited to find a career in software development where I can
+							both utilize the skills I've acquired coding games and web apps,
+							and refine those skills in a professional environment. <br />
+							While I love building games, now I can build just about anything.
 						</Typography>
 					</Paper>
 				</Grid>
@@ -86,19 +86,19 @@ function About(props) {
 					<Paper className={classes.paper + " about__text"}>
 						<div className={classes.row} />
 						<Typography className={classes.heading}>
-							I've logged 8 years in theme parks and guest service, and now I'm
-							ready to start new adventures in software development.
+							I've been coding as a hobby for years, but now I am developing for
+							a living.
 						</Typography>
 
 						<Typography className={classes.secondaryHeading + " about__text"}>
-							I have done so many different things at Walt Disney World,
-							Universal Studios, and SeaWorld, from working 36 hour shifts to
-							working way past midnight on New Years Eve, from performing
-							first-aid to helping lost children; I've loved all of it, made
-							many friends, some that I even consider family, and found love in
-							a place I never expected. I've had a thrilling life so far, and
-							I'm ready to start my next adventure pursuing a career in a field
-							that I will love even more.
+							I love building games and tinkering with them as a hobby, and have
+							always found coding fun. I have recently shifted my focus towards
+							full stack web developement, and have fallen in love with this
+							field as well. I have recently graduated from Lambda school, and I
+							am excited to find a career in software development where I can
+							both utilize the skills I've acquired coding games and web apps,
+							and refine those skills in a professional environment. <br />
+							While I love building games, now I can build just about anything.
 						</Typography>
 					</Paper>
 				</Grid>
