@@ -27,7 +27,9 @@ function ApplicationBar(props) {
       <AppBar position="static" className="appbar">
         <Toolbar className="appbar__container">
           <Typography variant="title" color="inherit" className={classes.flex + " appbar__title"}>
-            John P. Correia
+          <Link to="/">
+              John P. Correia
+          </Link>
           </Typography>
           <Link to="/">
             <Button className="appbar__button" color="inherit">Home</Button>

@@ -4,12 +4,12 @@
 - [ ] Add shortened About section
 - [ ] Nix Projects page
 - [ ] Update About me text
-- [ ] Make John P. Correia on Navbar a clickable button
+- [x] Make John P. Correia on Navbar a clickable button
 
 
 
 # Home
-### Set "John P Correia on the top left of navbar to lead back to Home
+### ~~Set "John P Correia on the top left of navbar to lead back to Home~~
 ### Display GIFs of projects [games, webapps, PM projects]
 honestly I would have those gifs of your game as close to front and center as possible. Maybe on the home page
 a short about section
