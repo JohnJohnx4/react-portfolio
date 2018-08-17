@@ -10,26 +10,32 @@ import SwipeableViews from "react-swipeable-views";
 
 // https://giant.gfycat.com/SaneDisguisedChital.webm
 // https://giant.gfycat.com/SaneDisguisedChital.mp4
+// https://thumbs.gfycat.com/SaneDisguisedChital-size_restricted.gif
 // Unity zombie game
 
 // https://giant.gfycat.com/ScrawnyGrandioseHeterodontosaurus.webm
 // https://giant.gfycat.com/ScrawnyGrandioseHeterodontosaurus.mp4
+// https://thumbs.gfycat.com/ScrawnyGrandioseHeterodontosaurus-size_restricted.gif
 // Unity Shattered Iron
 
 // https://giant.gfycat.com/HeftyScalyInvisiblerail.webm
 // https://giant.gfycat.com/HeftyScalyInvisiblerail.mp4
+// https://thumbs.gfycat.com/HeftyScalyInvisiblerail-size_restricted.gif
 // Hairspray
 
 // https://giant.gfycat.com/SphericalTanHerculesbeetle.webm
 // https://giant.gfycat.com/SphericalTanHerculesbeetle.mp4
+// https://thumbs.gfycat.com/SphericalTanHerculesbeetle-size_restricted.gif
 // GiveMeMyMoney
 
 // https://giant.gfycat.com/JubilantImpressiveDanishswedishfarmdog.webm
 // https://giant.gfycat.com/JubilantImpressiveDanishswedishfarmdog.mp4
+// https://thumbs.gfycat.com/JubilantImpressiveDanishswedishfarmdog-size_restricted.gif
 // LambdaHairSchool
 
 // https://giant.gfycat.com/FeistyDescriptiveEyas.webm
 // https://giant.gfycat.com/FeistyDescriptiveEyas.mp4
+// https://thumbs.gfycat.com/FeistyDescriptiveEyas-size_restricted.gif
 // Tetris
 
 // https://giant.gfycat.com/.webm
@@ -40,33 +46,38 @@ const projects = [
 	{
 		label: "Shattered Iron",
 		description: "A vehicle combat shooter inspired by Twisted Metal, also for a 24 hour Hack-a-thon. Key features include projectile collisions, raycasts, enemy point based navigation AI, and physics based vehicle movement.",
-		vidSrc: "https://giant.gfycat.com/ScrawnyGrandioseHeterodontosaurus.mp4"
+		vidSrc: "https://giant.gfycat.com/ScrawnyGrandioseHeterodontosaurus.mp4",
+		poster: "https://thumbs.gfycat.com/SaneDisguisedChital-size_restricted.gif"
 	},
   {
 		label: "Hairspray",
     description: "A MERN stack application to make hair salon appointments, pay in advance via Stripe API, recieve reminders via Twilio API, and submit feedback",
-    vidSrc: "https://giant.gfycat.com/HeftyScalyInvisiblerail.mp4"
+    vidSrc: "https://giant.gfycat.com/HeftyScalyInvisiblerail.mp4",
+    poster: "https://thumbs.gfycat.com/ScrawnyGrandioseHeterodontosaurus-size_restricted.gif"
   },
 	{
 		label: "Zombie Killers",
 		description: "An FPS made in Unity for a 24 hour Hack-a-thon. Some features included physics based movement, item pickups, data scructured inventory, and enemy AI.",
-		vidSrc: "https://giant.gfycat.com/SaneDisguisedChital.mp4"
+		vidSrc: "https://giant.gfycat.com/SaneDisguisedChital.mp4",
+		poster: "https://thumbs.gfycat.com/HeftyScalyInvisiblerail-size_restricted.gif"
 	},
 	{
 		label: "GiveMeMyMoney",
 		description: "A MERN stack app, where my primary role was that of a Project Manager. Supervised a team of 4, overseeing pull requests, assisting with deployment, and managing agile workflow.",
-		vidSrc: "https://giant.gfycat.com/SphericalTanHerculesbeetle.mp4"
+		vidSrc: "https://giant.gfycat.com/SphericalTanHerculesbeetle.mp4",
+		poster: "https://thumbs.gfycat.com/SphericalTanHerculesbeetle-size_restricted.gif"
 	},
   {
     label: "Tetris Clone",
     description: "A Tetris clone made in pure CSS, HTML, JavaScript, and HTML Canvas.",
-    vidSrc: "https://giant.gfycat.com/FeistyDescriptiveEyas.mp4"
+    vidSrc: "https://giant.gfycat.com/FeistyDescriptiveEyas.mp4",
+    poster: "https://thumbs.gfycat.com/JubilantImpressiveDanishswedishfarmdog-size_restricted.gif"
   },
 	{
 		label: "LambdaHairSchool",
 		description: "A React/Django app, with my role being Project Manager. I led a team of 4 developers, supervised GitHub pull requests, provided support when needed, and solved problems when hitting walls.",
-		vidSrc:
-			"https://giant.gfycat.com/JubilantImpressiveDanishswedishfarmdog.mp4"
+		vidSrc: "https://giant.gfycat.com/JubilantImpressiveDanishswedishfarmdog.mp4",
+		poster: "https://https://thumbs.gfycat.com/FeistyDescriptiveEyas-size_restricted.gif"
 	},
 ];
 
@@ -143,6 +154,7 @@ class Projects extends React.Component {
 							muted
 							key={step.label}
 							className={classes.video + " home__carousel"}
+							poster={step.poster}
 						>
 							<source src={step.vidSrc}/>
 							<source src={step.vidSrc} type="video/mp4" />
