@@ -43,6 +43,7 @@ function Projects(props) {
       <Grid container spacing={24}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
+          Click on any project to go to sites/ repos
             <SimpleList/>
           </Paper>
         </Grid>
