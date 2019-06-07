@@ -37,13 +37,13 @@ function ApplicationBar(props) {
           <Link to="/projects">
             <Button className="appbar__button" color="inherit">Projects</Button>
           </Link>
-          <Link to="/about">
+          {/* <Link to="/about">
             <Button className="appbar__button" color="inherit">About</Button>
-          </Link>
-          <Link to="/experience">
+          </Link> */}
+          {/* <Link to="/experience">
             <Button className="appbar__button" color="inherit">Experience</Button>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact"> */}
             <Button className="appbar__button" color="inherit">Contact</Button>
           </Link>
         </Toolbar>

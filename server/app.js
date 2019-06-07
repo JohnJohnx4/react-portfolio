@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 // const morgan = require("morgan");
 const cors = require("cors");
 const path = require("path");
-const password = require("./controllers/passwordController");
 // const routes = require('./routes/');
 // const keys = require('./config/keys');
 const port = process.env.PORT || 5000;
