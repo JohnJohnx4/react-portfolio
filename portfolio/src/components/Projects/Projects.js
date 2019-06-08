@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import SimpleList from './List';
+// import SimpleList from './List';
+import Cards from './Cards';
 
 const styles = theme => ({
   root: {
@@ -44,7 +45,8 @@ function Projects(props) {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
           Click on any project to go to sites/ repos
-            <SimpleList/>
+            {/* <SimpleList/> */}
+            <Cards/>
           </Paper>
         </Grid>
       </Grid>
