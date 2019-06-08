@@ -1,127 +1,137 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import Typography from "@material-ui/core/Typography";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
 import {
-	NoteMultipleOutlineIcon,
-	SprayIcon,
-  CalendarTodayIcon,
-	GamepadIcon,
-	GamepadVariantIcon,
-  SkullIcon,
-  CashUsdIcon
-} from "mdi-react";
+  Card,
+  CardContent,
+	CardHeader,
+	CardMedia,
+  Typography,
+  IconButton,
+  Button,
+  CardActions,
+  Collapse
+} from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import NoterImg from '../../assets/noter.png';
+import HairsprayImg from '../../assets/hairspray.png';
+import ShatteredImg from '../../assets/shattered.png';
+import TetrisImg from '../../assets/tetris.png';
 
 const styles = theme => ({
-	root: {
-		width: "100%",
-
-		backgroundColor: theme.palette.background.paper
-	}
+  root: {
+    width: '100%',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    backgroundColor: theme.palette.background.paper
+  },
+  card: {
+    maxWidth: 400,
+    margin: '2%'
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%' // 16:9
+  },
+  expand: {
+    transform: 'rotate(0deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest
+    })
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)'
+  }
 });
 
-function SimpleList(props) {
-	const { classes } = props;
-	return (
-		<div className={classes.root}>
-			<List component="nav">
-				<ListItem button component="a" href="https://www.hairspray.app">
-					<ListItemIcon className="project__icon">
-						<SprayIcon />
-					</ListItemIcon>
-					<ListItemText className="project__title" primary="Hairspray" />
-					<Typography className="project__text">
-						An app for hair salon guests to book appointments. Built with MERN
-						and utilizes Twilio and Stripe APIs
-					</Typography>
-				</ListItem>
+const projects = [
+  {
+		title: 'Noter',
+		subtitle: 'MERN Stack',
+    description:
+      'A note taking app able to create, read, update, and delete simple notes. User authentication with JWTs.',
+    link: 'https://www.hairspray.app',
+    image: NoterImg
+  },
+  {
+		title: 'Hairspray',
+		subtitle: 'MERN Stack',
+    description:
+      'An app for hair salon guests to book appointments and leave user feedback. Utilizes Twilio and Stripe APIs',
+    link: 'https://johnc-noter.herokuapp.com',
+    image: HairsprayImg
+  },
+  {
+		title: 'Shattered',
+		subtitle: 'Unity WebGL',
+    description:
+      'A Twisted Metal game clone, built with Unity and deployed to Heroku.',
+    link: 'https://shattered-iron.herokuapp.com',
+    image: ShatteredImg
+  },
+  {
+		title: 'Tetris',
+		subtitle: 'JS, HTML Canvas',
+    description: 'A tetris clone made with vanilla Javascript and HTML Canvas.',
+    link:
+      'https://johnjohnx4.github.io/Personal-Projects/Projects/Games/Tetris/',
+    image: TetrisImg
+  }
+];
 
-				<a href="https://johnc-noter.herokuapp.com">
-					<ListItem button>
-						<ListItemIcon className="project__icon">
-							<NoteMultipleOutlineIcon />
-						</ListItemIcon>
-						<ListItemText className="project__title" primary="Noter" />
-						<Typography className="project__text">
-							A note taking app able to create, read, update, and delete simple
-							notes. Made with MERN stack
-						</Typography>
-					</ListItem>
-				</a>
+function Cards(props) {
+  const [expanded, setExpanded] = React.useState(false);
 
-				<ListItem
-					button
-					component="a"
-					href="https://shattered-iron.herokuapp.com"
-				>
-					<ListItemIcon className="project__icon">
-						<GamepadVariantIcon />
-					</ListItemIcon>
-					<ListItemText className="project__title" primary="Shattered Iron" />
-					<Typography className="project__text">
-						A 'Twisted Metal' game clone, built with Unity and deployed to
-						Heroku.
-					</Typography>
-				</ListItem>
-
-				<ListItem
-					button
-					component="a"
-					href="https://github.com/JohnJohnx4/Unity-Hackathon-Project"
-				>
-					<ListItemIcon className="project__icon">
-						<SkullIcon />
-					</ListItemIcon>
-					<ListItemText className="project__title" primary="Zombie Killers" />
-					<Typography className="project__text">
-						A zombie first-person shooter made in Unity.
-					</Typography>
-				</ListItem>
-
-				<ListItem
-					button
-					component="a"
-					href="https://johnjohnx4.github.io/Personal-Projects/Projects/Games/Tetris/"
-				>
-					<ListItemIcon className="project__icon">
-						<GamepadIcon />
-					</ListItemIcon>
-					<ListItemText className="project__title" primary="Tetris" />
-					<Typography className="project__text">
-						A tetris clone made with HTML Canvas and Javascript
-					</Typography>
-				</ListItem>
-
-				<ListItem button component="a" href="https://www.givememymoney.app/">
-					<ListItemIcon className="project__icon">
-            <CashUsdIcon />
-					</ListItemIcon>
-					<ListItemText className="project__title" primary="Give Me My Money" />
-					<Typography className="project__text">
-						Project lead for a 4 man team to develop a MERN stack app that sends payment reminders.
-					</Typography>
-				</ListItem>
-
-				<ListItem button component="a" href="https://www.lambdahairschool.com/">
-					<ListItemIcon className="project__icon">
-            <CalendarTodayIcon />
-					</ListItemIcon>
-					<ListItemText className="project__title" primary="Lambda Hair School" />
-					<Typography className="project__text">
-						Managed and led a team to develop a hair appointment web app. Uses React and Django.
-					</Typography>
-				</ListItem>
-			</List>
-		</div>
-	);
+  function handleExpandClick() {
+    setExpanded(!expanded);
+  }
+  const { classes } = props;
+  return (
+    <div className={classes.root}>
+      {projects.map((project, i) => {
+        return (
+          <Card className={classes.card} key={i}>
+            <CardHeader title={project.title} subheader={project.subtitle} />
+            <CardMedia
+              className={classes.media}
+              image={project.image}
+              title={project.title}
+            />
+            <CardContent>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                {project.description}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button> Visit Site </Button>
+              <IconButton
+                className={clsx(classes.expand, {
+                  [classes.expandOpen]: expanded
+                })}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label='Show more'
+              >
+                <ExpandMoreIcon />
+              </IconButton>
+            </CardActions>
+            <Collapse in={expanded} timeout='auto' unmountOnExit>
+              <CardContent>
+                <Typography paragraph>Method:</Typography>
+              </CardContent>
+            </Collapse>
+          </Card>
+        );
+      })}
+    </div>
+  );
 }
 
-SimpleList.propTypes = {
-	classes: PropTypes.object.isRequired
+Cards.propTypes = {
+  classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(SimpleList);
+export default withStyles(styles)(Cards);

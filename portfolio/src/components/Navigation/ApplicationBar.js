@@ -29,12 +29,12 @@ function ApplicationBar(props) {
               John P. Correia
           </Link>
           </Typography>
-          <Link to="/">
+          {/* <Link to="/">
             <Button className="appbar__button" color="inherit">Home</Button>
-          </Link>
-          <Link to="/projects">
+          </Link> */}
+          {/* <Link to="/projects">
             <Button className="appbar__button" color="inherit">Projects</Button>
-          </Link>
+          </Link> */}
           {/* <Link to="/about">
             <Button className="appbar__button" color="inherit">About</Button>
           </Link>
