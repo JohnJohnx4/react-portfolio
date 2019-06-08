@@ -106,8 +106,8 @@ function Cards(props) {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button> Visit Site </Button>
-              <IconButton
+              <Button href={project.link}> Visit Site </Button>
+              {/* <IconButton
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded
                 })}
@@ -116,13 +116,13 @@ function Cards(props) {
                 aria-label='Show more'
               >
                 <ExpandMoreIcon />
-              </IconButton>
+              </IconButton> */}
             </CardActions>
-            <Collapse in={expanded} timeout='auto' unmountOnExit>
+            {/* <Collapse in={expanded} timeout='auto' unmountOnExit>
               <CardContent>
                 <Typography paragraph>Method:</Typography>
               </CardContent>
-            </Collapse>
+            </Collapse> */}
           </Card>
         );
       })}
