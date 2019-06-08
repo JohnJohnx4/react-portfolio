@@ -352,11 +352,11 @@ a:active {
   }
 }
 .navbar {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 @media (max-width: 479px) {
   .navbar {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     min-width: 100%;
     max-width: 100%;
   }
