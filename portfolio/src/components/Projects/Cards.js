@@ -48,12 +48,20 @@ const styles = theme => ({
 });
 
 const projects = [
+	{
+		title: 'Fundopolis Blog',
+		subtitle: 'Ghost, Gatsby, React',
+    description: 'A custom blogsite, using Ghost as a headless CMS',
+    link:
+      'https://blog.fundopolis.com/',
+    image: 'https://ghost.fundopolis.com/content/images/2019/09/hero.png'
+  },
   {
 		title: 'Noter',
 		subtitle: 'MERN Stack',
     description:
       'A note taking app able to create, read, update, and delete simple notes. User authentication with JWTs.',
-    link: 'https://www.hairspray.app',
+    link: 'https://johnc-noter.herokuapp.com',
     image: NoterImg
   },
   {
@@ -61,7 +69,7 @@ const projects = [
 		subtitle: 'MERN Stack',
     description:
       'An app for hair salon guests to book appointments and leave user feedback. Utilizes Twilio and Stripe APIs',
-    link: 'https://johnc-noter.herokuapp.com',
+    link: 'https://www.hairspray.app',
     image: HairsprayImg
   },
   {
@@ -71,14 +79,6 @@ const projects = [
       'A Twisted Metal game clone, built with Unity and deployed to Heroku.',
     link: 'https://shattered-iron.herokuapp.com',
     image: ShatteredImg
-  },
-  {
-		title: 'Tetris',
-		subtitle: 'JS, HTML Canvas',
-    description: 'A tetris clone made with vanilla Javascript and HTML Canvas.',
-    link:
-      'https://johnjohnx4.github.io/Personal-Projects/Projects/Games/Tetris/',
-    image: TetrisImg
   }
 ];
 
