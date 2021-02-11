@@ -53,7 +53,7 @@ const projects = [
 		subtitle: 'Ghost, Gatsby, React',
     description: 'A custom blogsite, using Ghost as a headless CMS',
     link:
-      'https://blog.fundopolis.com/',
+      'https://about.fundopolis.com/',
     image: 'https://ghost.fundopolis.com/content/images/2019/09/hero.png'
   },
   {
