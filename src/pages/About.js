@@ -7,7 +7,7 @@ const AboutPage = () => {
     <Container>
       <Row>
         <Col>
-          <Card className='p-5 mt-5'>
+          <Card className='p-5 my-5'>
             <Media>
               <Media left>
                 <Media

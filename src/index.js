@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Fade } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
@@ -14,10 +15,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Layout>
       <Router>
-        <Route exact path='/' component={MainPage} />
-        <Route path='/about' component={AboutPage} />
-        <Route path='/contact' component={ContactPage} />
-        <Route path='/projects' component={ProjectsPage} />
+      <Fade in={true}><Route exact path='/' component={MainPage} /></Fade>
+        <Fade in={true}><Route path='/about' component={AboutPage} /></Fade>
+        <Fade in={true}><Route path='/contact' component={ContactPage} /></Fade>
+        <Fade in={true}><Route path='/projects' component={ProjectsPage} /></Fade>
       </Router>
     </Layout>
   </React.StrictMode>,
