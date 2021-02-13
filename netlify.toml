@@ -1,0 +1,13 @@
+[Settings]
+ID = "abb8cc58-5e47-4229-beb3-4c6248b4ad6a"
+
+# Settings in the [build] context are 
+[build]
+  publish = "build/"
+  command = "npm run build"
+
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
