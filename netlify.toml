@@ -1,17 +1,11 @@
 [Settings]
-ID = "f5f37764-deec-4e75-8641-958675a9f00f"
+ID = "abb8cc58-5e47-4229-beb3-4c6248b4ad6a"
 
 # Settings in the [build] context are 
 [build]
-  # This is the directory to change to before starting a build.
-  base    = "portfolio"
-  # NOTE: This is where we will look for package.json/.nvmrc/etc, not root.
-  # This is the directory that you are publishing from (relative to root of your repo)
-  publish = "portfolio/build/"
-  # This will be your default build command
+  publish = "build/"
   command = "npm run build"
-  # This is where we will look for your lambda functions
-  # functions = "project/functions/"
+
 
 [[redirects]]
   from = "/*"
