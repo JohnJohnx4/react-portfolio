@@ -14,12 +14,10 @@ import ProjectsPage from './pages/Projects';
 ReactDOM.render(
   <React.StrictMode>
     <Layout>
-      <Router>
-      <Fade in={true}><Route exact path='/' component={MainPage} /></Fade>
-        <Fade in={true}><Route path='/about' component={AboutPage} /></Fade>
-        <Fade in={true}><Route path='/contact' component={ContactPage} /></Fade>
-        <Fade in={true}><Route path='/projects' component={ProjectsPage} /></Fade>
-      </Router>
+        <MainPage />
+        <ProjectsPage />
+        <AboutPage />
+        <ContactPage />
     </Layout>
   </React.StrictMode>,
   document.getElementById('root')

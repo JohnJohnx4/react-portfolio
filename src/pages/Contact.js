@@ -12,7 +12,7 @@ import Billboard from '../components/Billboard';
 
 const ContactPage = () => {
   return (
-    <Container className='px-5 pt-5 mt-5'>
+    <Container className='px-3'>
       <Row>
         <Billboard />
       </Row>

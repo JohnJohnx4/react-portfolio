@@ -57,8 +57,9 @@ const MainPage = () => {
       src: HairsprayImg,
       altText: 'Hairspray App Logo',
       caption: '',
-      description: 'Full Stack Application used to book appointments. React, Node, Mongo, deployed to Heroku and Netlify',
-      href: false
+      description:
+        'Full Stack Application used to book appointments. React, Node, Mongo, deployed to Heroku and Netlify',
+      href: false,
     },
   ];
 
@@ -66,12 +67,14 @@ const MainPage = () => {
     <Container>
       <Row>
         <Col>
-          <Card className='px-5 mt-5'>
+          <Card className='px-2 mt-5'>
             <CardBody className='text-center'>
               <CardTitle tag='h5' className='mb-4'>
-                I'm John, a professional software developer. I specialize in
-                building apps in React, Node, GraphQL, and much more. Please
-                check out my projects!
+                I'm John, a professional software developer.
+                <div className='d-none d-sm-block'>
+                  I specialize in building apps in React, Node, GraphQL, and
+                  much more. Please check out my projects!
+                </div>
               </CardTitle>
               <Carousel items={items} setCurrentSlide={setCurrentSlide} />
             </CardBody>

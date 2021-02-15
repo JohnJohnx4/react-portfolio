@@ -38,7 +38,7 @@ const ProjectsPage = () => {
       subtitle: 'MERN Stack',
       description:
         'Note taking application built with MERN as a personal project. Users are able to add, edit, and delete notes. Currently reworking API.',
-      href: '',
+      href: 'https://noter.johnpcorreia.com/',
     },
     {
       img: HairsprayImg,
@@ -62,7 +62,7 @@ const ProjectsPage = () => {
     <Container className='mt-5'>
       <Row>
         <Col>
-          <div className='mb-5 h3 text-muted text-center'>Projects</div>
+          <div className='mb-5 h3 text-muted text-center'> My Projects</div>
         </Col>
       </Row>
       <Container>
