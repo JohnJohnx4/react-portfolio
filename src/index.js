@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
 
 import Layout from './layout/Layout';
 import MainPage from './pages/Main';
