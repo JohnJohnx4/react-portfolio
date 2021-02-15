@@ -62,7 +62,7 @@ const ProjectsPage = () => {
     <Container className='mt-5'>
       <Row>
         <Col>
-          <div className='mb-5 h3 text-muted text-center'>Projects</div>
+          <div className='mb-5 h3 text-muted text-center'> My Projects</div>
         </Col>
       </Row>
       <Container>

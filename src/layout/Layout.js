@@ -15,29 +15,12 @@ import {
 } from 'reactstrap';
 
 const Layout = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
   return (
     <>
       <div>
-        <Navbar color='light' light expand='md'>
+        <Navbar pills color='light' light expand='md'>
           <NavbarBrand href='/'>John C.</NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className='mr-auto' navbar>
-              <NavItem>
-                <NavLink href='/about/'>About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='/projects/'>Projects</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='/contact/'>Contact Me</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+          <Nav className='mr-auto' navbar></Nav>
         </Navbar>
       </div>
       {props.children}
