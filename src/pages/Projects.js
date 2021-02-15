@@ -38,7 +38,7 @@ const ProjectsPage = () => {
       subtitle: 'MERN Stack',
       description:
         'Note taking application built with MERN as a personal project. Users are able to add, edit, and delete notes. Currently reworking API.',
-      href: '',
+      href: 'https://noter.johnpcorreia.com/',
     },
     {
       img: HairsprayImg,
