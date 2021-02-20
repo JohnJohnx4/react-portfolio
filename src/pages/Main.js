@@ -51,7 +51,7 @@ const MainPage = () => {
       caption: '',
       description:
         'Note taking application built with React. Styled with Material-UI and deployed to Heroku',
-      href: 'https://johnc-noter.herokuapp.com/',
+      href: 'https://noter.johnpcorreia.com/',
     },
     {
       src: HairsprayImg,
